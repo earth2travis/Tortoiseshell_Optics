@@ -6,6 +6,7 @@ body {
 }
 
 .wrapper {
+
 }
 
 .container {
@@ -14,12 +15,11 @@ body {
   margin-left: auto;
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-  background-color: cadetblue;
-  margin-top: 1rem;
-  color: white;
+.hero {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 30rem;
 }
 
 .logo {
@@ -28,9 +28,18 @@ header nav {
   height: 1.5rem;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+}
+
 nav h1 {
   display: inline-block;
-  font-size: 1rem;
 }
 
 nav ul {
@@ -42,4 +51,85 @@ nav li {
   display: inline;
   padding-right: 2rem;
   border: 1px dotted pink;
+}
+
+.hero_text {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  margin-top: 10rem;
+  height: 5rem;
+}
+
+.hero_text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+  margin-top: 3rem;
+  border: 2px dotted pink;
+
+}
+
+.feature {
+  width: 5rem;
+  border: 2px dotted pink;
+}
+
+.feature img {
+  width: 3.5rem;
+}
+
+.feature figcaption {
+  color: pink;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.philosophy, .appointments {
+  width: 35%;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+.philosophy h2, .appointments h2 {
+  width: 10rem;
+  background-color: cadetblue;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+.philosophy p, .appointments p {
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  margin-top: 1rem;
+  color: black;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4.0rem 1.0rem 4.0rem 4.0rem;
 }
